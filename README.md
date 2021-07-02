@@ -5,7 +5,7 @@ source files.
 ## Making coverage reports
 `make coverage`
 
-## Depencies
+## Dependencies
 - menhir
 - bisect_ppx
 - alcotest
