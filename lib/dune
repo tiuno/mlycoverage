@@ -1,0 +1,10 @@
+(ocamllex lexer)
+
+(menhir
+ (flags --explain --inspection --table)
+ (modules parser))
+
+(library
+ (name mlycoverage)
+ (libraries menhirLib pprint)
+ (instrumentation (backend bisect_ppx)))
